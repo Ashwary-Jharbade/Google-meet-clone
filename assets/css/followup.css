@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+*{
+    outline: none;
+}
+
+:root{
+    --blue:#1a73e8;
+    --dark-blue:#0964db;
+    --black:#212121;
+    --gray:#5f6368;
+    --mild-gray:#e7e7e7e1;
+    --white:#ffffff;
+    --green:#007969;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+a{
+    text-decoration: none;
+}
+
+.valign-center{
+    display: flex;
+    align-self: center;
+}
+
+.halign-center{
+    justify-content: center;
+}
+
+.f-300{
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.f-400{
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.f-600{
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section-wrapper{
+    padding:0 20px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+/* Header */
+
+.navigation-bar{
+    background-color:var(--white)
+}
+
+.logo-text{
+    font-size: 25px;
+    color: var(--gray);
+}
+
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 20px;
+    background-color: var(--white);
+}
+
+.user-info{
+    display: flex;
+    margin-left: auto;
+    position: fixed;
+    right: 20px;
+    background-color: var(--white);
+}
+
+.email-text{
+    color: var(--black);
+    text-align: right;
+}
+
+.switch-acc-text{
+    color: var(--green);
+    text-align: right;
+    margin: 3px 0;
+}
+
+.user-avatar-wrapper{
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.user-content{
+    align-self: center;
+    margin-left: 20px;
+}
+
+.user-avatar-wrapper:hover{
+    background-color: var(--mild-gray);
+}
+
+.user-avatar{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: var(--blue);
+}
+
+/* Action container */
+
+.action-container{
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.video-wrapper{
+    flex: 6;
+    padding: 20px;
+}
+
+.video-container{
+    height: 400px;
+    width: 100%;
+    background-color: var(--black);
+    border-radius: 10px;
+}
+
+.action-buttons{
+    flex: 4;
+}
+
+.btn-wrapper{
+    text-align: center;
+}
+
+.ready-text{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-ask button{
+    background-color: var(--green);
+    border-radius: 30px;
+    padding: 17px 35px;
+    color: var(--white);
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-present button{
+    border: 1px solid rgba(128, 128, 128, 0.658);
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin:10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.present-btn-container{
+    display: flex;
+    align-items: center;
+    color: var(--green);
+}
+
+.present-button-text{
+    margin-left: 10px;
+}
+
+.check-av{
+    padding:0 20px;
+}
+
+
+@media screen and (max-width:850px) {
+    .action-container{
+        flex-direction: column;
+        min-height: max-content;
+    }
+
+    .video-container{
+        height: 45vw;
+    }
+
+    .video-wrapper{
+        flex: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .action-buttons{
+        flex: 0;
+    }
+}
+
+@media screen and (max-width:400px){
+    .btn-ask button{
+        padding: 15px 20px;
+    }
+    
+    .btn-present button{
+        padding: 8px 15px;
+    }
+}
