@@ -9,39 +9,15 @@
     --dark-blue:#0964db;
     --black:#212121;
     --gray:#5f6368;
-    --mild-gray:#e7e7e7e1;
-    --white:#ffffff;
+    --mild-gray:#e7e4e4;
+    --white:#ffffffce;
     --green:#007969;
+    --red:#d93025;
 }
 
 body{
     padding: 0;
     margin: 0;
-}
-
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
 }
 
 a{
@@ -148,13 +124,15 @@ a{
 
 .action-container{
     display: flex;
-    min-height: 80vh;
+    min-height: 480px;
     align-items: center;
+    padding: 20px;
 }
 
 .video-wrapper{
     flex: 6;
-    padding: 20px;
+    padding: 40px 30px 10px 30px;
+    position: relative;
 }
 
 .video-container{
@@ -162,6 +140,82 @@ a{
     width: 100%;
     background-color: var(--black);
     border-radius: 10px;
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.av-buttons{
+    display: flex;
+    color: var(--white);
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.a-button{
+    padding: 12px 14px;
+    border-radius: 50%;
+    background-color: var(--red);
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.v-button{
+    border-radius: 50%;
+    padding: 12px 14px;
+    background-color: var(--red);
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.chng-bg-wrapper{
+    position:absolute;
+    bottom: 30px;
+    right: 40px;
+}
+
+.chng-bg-container{
+    padding: 12px 13px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+
+.chng-bg-container:hover{
+    background-color: rgba(255,255,255,0.4);
+}
+
+.action-btn-wrapper{
+    position:absolute;
+    top: 50px;
+    right: 40px;
+}
+
+.action-btn-container{
+    cursor: pointer;
+    color: var(--white);
+    padding: 11px 12px;
+    border-radius: 50%;
+}
+
+.action-btn-container:hover{
+    background-color: rgba(255,255,255,0.4);
+}
+
+.cam-status-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cam-status-container{
+    color: var(--white);
+    font-size: 25px;
 }
 
 .action-buttons{
@@ -183,30 +237,35 @@ a{
 }
 
 .btn-ask button{
-    background-color: var(--green);
+    border: none;
+    background-color: var(--blue);
     border-radius: 30px;
-    padding: 17px 35px;
+    padding: 15px 30px;
     color: var(--white);
-    margin: 10px;
+    margin: 5px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%), 0px 1px 3px 1px rgb(60 64 67 / 15%);
+    font-weight: 600;
 }
 
 .btn-present button{
-    border: 1px solid rgba(128, 128, 128, 0.658);
+    border: none;
     background-color: var(--white);
     border-radius: 30px;
     padding: 10px 20px;
-    margin:10px;
+    margin:5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%), 0px 1px 3px 1px rgb(60 64 67 / 15%);
+    font-weight: 600;
 }
 
 .present-btn-container{
     display: flex;
     align-items: center;
-    color: var(--green);
+    color: var(--blue);
 }
 
 .present-button-text{
@@ -214,9 +273,29 @@ a{
 }
 
 .check-av{
-    padding:0 20px;
+    margin:0 45px;
+    border: 1px solid var(--mild-gray);
+    width: fit-content;
+    display: flex;
+    padding: 3px 10px;
+    align-self: center;
+    border-radius: 20px;
 }
 
+.check-av-container{
+    display: flex;
+    align-items: center;
+}
+
+.av-icon{
+    color: var(--blue);
+    margin-right: 5px;
+}
+
+.av-text{
+    color: var(--gray);
+    font-size: 16px;
+}
 
 @media screen and (max-width:850px) {
     .action-container{
@@ -237,6 +316,38 @@ a{
     .action-buttons{
         flex: 0;
     }
+
+    .check-av{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:768px){
+    .action-btn-wrapper{
+        top: 30px;
+        right: 30px;
+    }
+    .action-btn-container{
+        padding: 5px 7px;
+    }
+
+    .chng-bg-wrapper{
+        bottom: 30px;
+        right: 30px;
+    }
+    
+    .chng-bg-container{
+        padding: 5px 7px;
+    }
+
+    .a-button{
+        padding: 5px 7px;
+    }
+    
+    .v-button{
+        padding: 5px 7px;
+    }
+    
 }
 
 @media screen and (max-width:400px){
@@ -246,5 +357,14 @@ a{
     
     .btn-present button{
         padding: 8px 15px;
+    }
+
+    .action-btn-wrapper{
+        top: 25px;
+        right: 25px;
+    }
+
+    .action-btn-container{
+        padding: 5px 7px;
     }
 }
