@@ -3,6 +3,14 @@ Trying to clone google meet home page, meeting landing page and meeting dashboar
 
 ### [Demo of Google Meet Clone Page](https://ashwary-jharbade.github.io/Google-meet-clone/)
 
+### Snapshot of the pages 
+
+#### Google meet home page
+![Screenshot (1198)](https://user-images.githubusercontent.com/55127977/130587268-ab0fc9da-0e21-40c5-9363-9228e63b4289.png)
+
+#### Google meet link follow up page
+![Screenshot (1199)](https://user-images.githubusercontent.com/55127977/130587226-7bed83d3-1121-49e0-8013-7c8d94a10368.png)
+
 ### Draw.io page layout
 #### Google meet home page
 ![Google meet home page](https://github.com/Ashwary-Jharbade/Google-meet-clone/blob/main/assets/draw.io/google-meet-home.png)
