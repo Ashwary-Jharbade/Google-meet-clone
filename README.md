@@ -1,7 +1,11 @@
 # Google-meet-clone
 Trying to clone google meet home page, meeting landing page and meeting dashboard
 
-### [Demo of Google Meet Clone Page](https://ashwary-jharbade.github.io/Google-meet-clone/)
+### [Demo of Google - Meet Clone Page](https://ashwary-jharbade.github.io/Google-meet-clone/)
+
+### Live Snapshot
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/55127977/131226934-6e61d256-8795-49a8-a7c2-2f689c9719d0.gif)
 
 ### Snapshot of the pages 
 
